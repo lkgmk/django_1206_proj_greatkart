@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+</head>
+<body>
+<center>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+
+<h2>Data Table</h2>
+      <form action="{% url 'show'%}" method="post">
+          {% csrf_token %}
+          <label for="fname">Search by Name:</label><br>
+          <input type="text" id="fname" name="name" value=""><br><br>
+          <input type="submit" value="Search">
+      </form>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>City</th>
+    <th>Action</th>
+
+  </tr>
+    {% for d in data %}
+    <tr>
+        <td>{{ d.person_name}}</td>
+        <td>{{ d.person_city}}</td>
+        <td><a href="{% url 'delete'  d.person_name %}">Delete</a></td>
+<!--         <td><a href="{% url 'show'  d.person_name %}">Delete</a></td>-->
+    </tr>
+    {% endfor %}
+
+</table>
+</center>
+</body>
+</html>

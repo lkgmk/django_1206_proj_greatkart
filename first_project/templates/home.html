@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<center>
+    <html>
+<body>
+
+<h2>Employee detail</h2>
+
+    <form action="{% url 'add_data' %}" method="post">
+      {% csrf_token %}
+      <label for="fname">Name:</label><br>
+      <input type="text" id="fname" name="fname" value=""><br>
+      <label for="lname">City:</label><br>
+      <input type="text" id="lname" name="city" value=""><br><br>
+       <label for="Employeename">Company name:</label><br>
+      <input type="text" id="Employeename" name="Employeename" value=""><br>
+        <input type="submit" value="Submit">
+    </form>
+    </br>
+    <a href="{% url 'home' %"><button>Show</button></a>
+
+
+
+
+</body>
+</html>
+</center>
+</body>
+</html>
+
+
+
+

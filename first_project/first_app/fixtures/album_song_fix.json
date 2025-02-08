@@ -1,0 +1,66 @@
+[
+  {
+    "model": "first_app.album",
+    "pk": 4,
+    "fields": {
+      "title": "album 4",
+      "artist": "artist 4"
+    }
+  },
+  {
+    "model": "first_app.album",
+    "pk": 5,
+    "fields": {
+      "title": "album 5",
+      "artist": "artist 5"
+    }
+  },
+  {
+    "model": "first_app.album",
+    "pk": 6,
+    "fields": {
+      "title": "album 6",
+      "artist": "artist 6"
+    }
+  },
+  {
+    "model": "first_app.song",
+    "pk": 4,
+    "fields": {
+      "title": "song 4",
+      "album_id": 4
+    }
+  },
+  {
+    "model": "first_app.song",
+    "pk": 5,
+    "fields": {
+      "title": "song 5",
+      "album_id": 5
+    }
+  },
+  {
+    "model": "first_app.song",
+    "pk": 6,
+    "fields": {
+      "title": "song 6",
+      "album_id": 6
+    }
+  },
+  {
+    "model": "first_app.song",
+    "pk": 7,
+    "fields": {
+      "title": "song 7",
+      "album_id": 6
+    }
+  },
+  {
+    "model": "first_app.song",
+    "pk": 8,
+    "fields": {
+      "title": "song 8",
+      "album_id": 6
+    }
+  }
+]

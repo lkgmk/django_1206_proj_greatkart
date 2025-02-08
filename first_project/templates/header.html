@@ -1,0 +1,91 @@
+{% load static %}
+
+
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Inance</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+  <!-- font awesome style -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}" />
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css'%}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<!--<body>-->
+<!--  <div class="hero_area">-->
+<!--    &lt;!&ndash; header section strats &ndash;&gt;-->
+<!--    <header class="header_section">-->
+<!--      <div class="header_top">-->
+<!--        <div class="container-fluid">-->
+<!--          <div class="contact_nav">-->
+<!--            <a href="">-->
+<!--              <i class="fa fa-phone" aria-hidden="true"></i>-->
+<!--              <span>-->
+<!--                Call : +01 123455678990-->
+<!--              </span>-->
+<!--            </a>-->
+<!--            <a href="">-->
+<!--              <i class="fa fa-envelope" aria-hidden="true"></i>-->
+<!--              <span>-->
+<!--                Email : demo@gmail.com-->
+<!--              </span>-->
+<!--            </a>-->
+<!--          </div>-->
+<!--        </div>-->
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="index.html">
+              <span>
+                Inance
+              </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'inance_url' %}">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'inance_about_url'%}"> About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'inance_services_url' %}">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+
+{% block content %}
+<!--  content-->
+{% endblock %}
